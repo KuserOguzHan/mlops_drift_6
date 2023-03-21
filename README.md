@@ -1,20 +1,20 @@
-Bu proje MLOPS BOOTCAMP 15. projenin örnegidir.
+- This project aim to teach us What is the drift and how can appply it in a ML project.
 
-## 1. Open mysql database
+### 1. Open mysql database
 
-## 2. Connect to the database
+### 2. Connect to the database
 
 ```
 docker exec -it mlflow_db mysql -u root -p
 ```
 
-## 3. Show database and tables
+### 3. Show database and tables
 
 ```
 mysql> show databases;
 ```
 
-```
+``` 
 mysql> use mlops;
 ```
 
