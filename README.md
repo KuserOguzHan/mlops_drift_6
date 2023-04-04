@@ -20,7 +20,7 @@ mysql> show databases;
 ```
 
 ``` 
-mysql> 
+mysql> select user from mysql.user;
 ```
 
 ```
@@ -28,13 +28,15 @@ mysql> show tables;
 ```
 
 ```
-mysql> select user from mysql.user;
-```
-
-```
 mysql> exit
 ```
-### 5. Use information of project data
+### 5. Run Uvicorn
+
+```
+uvicorn mall.main:app --host 0.0.0.0 --port 8002 --reload
+```
+
+### 6. Use information of project data
 
 Samsung,64.0,4.0,6.5,5000.0,8.0,48.0,2.0,2.0,2.0,2.999
 ```
@@ -112,7 +114,7 @@ iPhone,64.0,4.0,6.1,3110.0,12.0,12.0,12.0,0.0,0.0,11.199
 }
 ```
 
-### 6. Use drift information of project data
+### 7. Use drift information of project data
 
 Samsung,64.0,4.0,6.5,5000.0,8.0,48.0,2.0,2.0,2.0,2.999
 ```
@@ -192,7 +194,7 @@ iPhone,64.0,4.0,6.1,3110.0,12.0,12.0,12.0,0.0,0.0,11.199
 
 
 
-## 7. Connect to database
+## 8. Connect to database
 
 ```
 docker exec -it mlflow_db bash
