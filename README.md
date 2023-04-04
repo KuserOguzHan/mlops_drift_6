@@ -34,7 +34,7 @@ mysql> exit
 ### 4. Run Uvicorn
 
 ```
-uvicorn mall.main:app --host 0.0.0.0 --port 8002 --reload
+uvicorn main:app --host 0.0.0.0 --port 8002 --reload
 ```
 
 ### 5. Use information of project data
