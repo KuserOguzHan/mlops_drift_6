@@ -1,19 +1,18 @@
 - This project aim to teach us what is the drift and how can appply it in a ML project.
 
 ### 1. Pip İnstall Requierements
+
 ```
 pip install -r requirements.txt
 ```
 
-### 2. Open mysql database
-
-### 3. Connect to the database
+### 2. Connect to the database
 
 ```
 docker exec -it mlflow_db mysql -u root -p
 ```
 
-### 4. Show database and tables
+### 3. Show database and tables
 
 ```
 mysql> show databases;
@@ -30,13 +29,15 @@ mysql> show tables;
 ```
 mysql> exit
 ```
-### 5. Run Uvicorn
+
+
+### 4. Run Uvicorn
 
 ```
 uvicorn mall.main:app --host 0.0.0.0 --port 8002 --reload
 ```
 
-### 6. Use information of project data
+### 5. Use information of project data
 
 Samsung,64.0,4.0,6.5,5000.0,8.0,48.0,2.0,2.0,2.0,2.999
 ```
@@ -114,7 +115,7 @@ iPhone,64.0,4.0,6.1,3110.0,12.0,12.0,12.0,0.0,0.0,11.199
 }
 ```
 
-### 7. Use drift information of project data
+### 6. Use drift information of project data
 
 Samsung,64.0,4.0,6.5,5000.0,8.0,48.0,2.0,2.0,2.0,2.999
 ```
@@ -194,7 +195,7 @@ iPhone,64.0,4.0,6.1,3110.0,12.0,12.0,12.0,0.0,0.0,11.199
 
 
 
-## 8. Connect to database
+### 7. Connect to database
 
 ```
 docker exec -it mlflow_db bash
@@ -202,10 +203,6 @@ docker exec -it mlflow_db bash
 
 ```
 mysql -u mlops_user -D mlops -p
-```
-
-```
-truncate table hepsiburada;
 ```
 
 ```
